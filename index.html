@@ -1,12 +1,153 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Luxe Beaches | Luxury Travel</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    <button class="menu" onclick="toggleMenu()">☰</button>
+    <a class="book" href="#contact">Book Now →</a>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="gold">DISCOVER PARADISE</p>
+        <h1>Explore The Beauty<br>Of Dream Beaches</h1>
+        <p>Crystal clear waters, golden sands and unforgettable moments await you.</p>
+        <a href="#destinations" class="btn">Explore Beaches →</a>
+    </div>
+</section>
+
+<section class="section" id="destinations">
+    <p class="gold center">TOP BEACH DESTINATIONS</p>
+    <h2>Our Favorite Beaches</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600" alt="Maldives">
+            <h3>Maldives</h3>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600" alt="Bali">
+            <h3>Bali</h3>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=600" alt="Seychelles">
+            <h3>Seychelles</h3>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=600" alt="Bora Bora">
+            <h3>Bora Bora</h3>
+        </div>
+    </div>
+</section>
+
+<section class="features" id="resorts">
+    <div>
+        <h2>Luxury Beach Resorts</h2>
+        <p>Experience world-class resorts and beautiful ocean views.</p>
+        <a href="#contact" class="btn">View Resorts →</a>
+    </div>
+    <div>
+        <h2>Beach Adventures</h2>
+        <p>Enjoy scuba diving, snorkeling and surfing.</p>
+        <a href="#gallery" class="btn">Explore →</a>
+    </div>
+</section>
+
+<section class="section" id="gallery">
+    <p class="gold center">BEAUTIFUL MOMENTS</p>
+    <h2>Beach Gallery</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=500" alt="Beach">
+        <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=500" alt="Beach">
+        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=500" alt="Ocean">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500" alt="Sea">
+    </div>
+</section>
+
+<section class="about">
+    <h2>Your Dream Beach Getaway Awaits</h2>
+    <p>Discover beautiful beaches, luxury stays and unforgettable holidays with Luxe Beaches.</p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Plan Your Beach Holiday</h2>
+    <p>Send us your travel enquiry.</p>
+
+    <form id="bookingForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+
+        <select required>
+            <option value="">Select Destination</option>
+            <option>Maldives</option>
+            <option>Bali</option>
+            <option>Seychelles</option>
+            <option>Bora Bora</option>
+        </select>
+
+        <input type="date" required>
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message →</button>
+    </form>
+    <p id="message"></p>
+</section>
+
+<footer>
+    <h2>🌴 LUXE BEACHES</h2>
+    <p>Travel • Relax • Explore</p>
+    <p>© 2026 Luxe Beaches. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="beaches.js"></script>
 </body>
-<script src="html.js"></script>
 </html>
